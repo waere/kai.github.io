@@ -1,0 +1,84 @@
+@charset "utf-8";
+/* CSS Document */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input {
+    margin: 0;
+    padding: 0;
+}
+
+body {background:url(../images/nav_01.png) no-repeat;background-color:#000;font-family:"微软雅黑","宋体";font-size:12px;min-width: 1200px;min-height: 500px;}
+ul,li {list-style:none;}
+a:link,a:visited {color:#c3a07d;text-decoration:none;}
+a:hover {color:#050504;text-decoration:none;}
+img {vertical-align:top;/*如在插入图片的位置出现了缝隙，用此代码解决*/border:0;}
+.wrapper {width:1200px;margin:0 auto;/*不论窗口大小，保证盒子始终在页面水平中间*/}
+
+/*通用 样式*/
+.clearfix:after {content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix {zoom:1;/*兼容*/}
+	
+.wrapper {width:1200px;margin:0 auto;/*不论窗口大小，保证盒子始终在页面水平中间*/}
+.fl {float:left;}
+.fr {float:right;}
+.bk {border:1px solid red;}
+a {transition:all .3s}
+
+/*---------  标题样式：开始        -------*/
+/*---------  标题样式：结束        -------*/
+
+/*---------   导航样式：开始      ------*/
+.nav{height:90px;background: #000;position: fixed;top:0;left:0;z-index:10;width:100%;}
+.nav .wrapper{padding-top:0;margin:0 auto;text-align:center;line-height: 48px;}
+.nav .logo{position:relative;z-index:2;font-size:0;height:80px;width:219px;padding-right:30px;padding-top:10px;}
+.nav .logo a{height:80px;display: inline-block;*display: block;zoom:1;}
+.nav .logo img{vertical-align:middle;}
+.nav .nul{position:relative;padding-top:10px;height:80px;font-size: 0;}
+.nav .nul .down .down_a{height:80px;width:135px;display:inline-block;*display: inline;*zoom:1;color:#dfb68e;font-size:18px;line-height:80px;transition:all .5s;}
+.nav .nul .down .current{color:#0d0d0d;background:#dfb68e;}
+
+.nav .nul i{position:absolute;top:0;left:251px;z-index:-1;background:#dfb68e;opacity: 1;height:90px;width:135px;}
+.nav .nul>li{font-size: 18px;line-height: 80px;height:80px;width:135px;display:inline-block;*display: inline;*zoom:1; position: relative;}
+.nav .nul li>a{display: block;}
+/*.nav .nul>li:hover{background: #DFB68E;}*/
+/*.nav .nul>li:hover>a{color:#000;}*/
+.subnav{position: absolute;top:80px; left: 0;display: none;}
+.subnav li{height: 60px;line-height: 60px;width:135px;margin-top: 1px;background: #DFB68E;color:#000;}
+.subnav li a{color:#000; height: 60px;}
+.subnav>li:hover{background:#0d0d0d;}
+.subnav>li:hover a{color:#dfb68e;}
+
+/*---------  导航样式：结束        -------*/
+
+
+/*footer样式开始*/
+.footer{width: 100%;height:600px;min-width: 1200px;background: #1a1a1a;color:#c3a07d;}
+.footermain{width: 1200px;margin:0 auto;}
+.footermain .tit{font-size: 36px;color:#c3a07d;font-family: "宋体";padding-top: 30px;padding-bottom: 44px;text-align: center;}
+.footer .footl{padding-top: 40px;padding-right: 137px;}
+.footer .footl .footli{font-size: 0;width:502px;height:388px;}
+.footer .footl .footli>li{display: inline-block;padding-left: 90px;font-size: 18px;line-height: 20px;height:220px;width:161px;vertical-align: middle;}
+.footer .footl .footli>li>i{display: inline-block;width:3px;height:17px;background: #c3a07d;margin-right: 5px;margin-bottom: -3px;}
+.footer .footl .footli>li>ul{margin-top: 16px;}
+.footer .footl .footli>li>ul a{font-size: 12px;line-height: 20px;color:#747474;}
+.footer .footl .footli>li>ul a:hover{color:#c3a07d;padding-left: 10px;}
+.footer .footl .footli>li>img{margin-top: 16px;}
+
+.footer .footr{width:560px;height: 382px;text-align: left;font-size: 18px;line-height: 20px;padding-top: 40px;}
+.footer .footr p i{display: inline-block;width: 3px;height: 17px;background: #c3a07d;margin-right: 5px;margin-bottom: -3px;}
+.footer .footr .form{padding-top: 23px;}
+.footer .footr .input {width: 545px;margin-bottom: 16px;color: #747474;background: #1a1a1a;border: none;outline:none;border: 1px dotted #655e56;height:32px; border-radius: 5px;padding-left: 5px;}
+.footer .footr .form textarea{height: 146px;width: 545px;}
+.footer .footr .form .btn{transition: all .5s;background: rgba(223,182,142,0.1);color:#747474;width: 550px;}
+.footer .footr .form .btn:hover{background: rgba(223,182,142,0.5);color:#bba;}
+/*footer样式结束*/

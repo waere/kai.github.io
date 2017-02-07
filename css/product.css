@@ -1,0 +1,75 @@
+/*banner样式*/
+.banner {width:100%;min-width:1200px;}
+.banner img {width:100%;min-width:1200px;}
+/*banner样式结束*/
+
+/*search 搜索样式开始*/
+.search{width: 1200px;height: 80px;margin:0 auto;color: #c3a07d;font-size: 14px;line-height: 80px;}
+.search_l{padding-left: 30px;}
+.search p a:hover{color: #c3a07d;text-decoration: underline;}
+.search .sear_text{width: 200px;height: 38px;border: none; color: #fff;background-color: #1a1a1a;border: 1px dotted #dfb68e;padding:0 5px;font-size: 16px;outline:none;}
+.search .sear_btn{width: 45px;height: 38px;
+    background-color: #000;border: 1px dotted #dfb68e;margin-left: 11px;margin-right: 23px;color: #dfb68e;cursor:pointer;outline:none;transition: all .3s;}
+.search .sear_btn:hover{background-color: rgba(223,182,142,0.3);}
+/*search 搜索样式结束*/
+
+
+/*center 纵横系列部分样式*/
+.centerbox{background: #cbc8c3;box-shadow: 0 0 300px 20px #b3aea8 inset;}
+.centerbox .center{width: 1200px;margin:0 auto;padding-top: 80px;}
+.center ul li{padding-left: 60px;margin-bottom: 80px;height: 514px;background: rgba(195,160,125,.3);color: #161616;transition: all .5s;}
+.center h2{font-size: 24px;height: 31px;width: 322px;}
+.center p{font-size: 16px;height: 100px;width: 300px;text-align: justify;}
+.center .firsleft{width: 322px;height:514px;}
+.center .firsleft h2{padding: 135px 0 60px;}
+.center .firsleft p{padding-bottom: 60px;}
+.butten_box a {display: block;width: 200px;height: 44px;perspective: 1000px;}
+.butten_box a .cube {width: 200px;height: 44px;position: relative;transform-style: preserve-3d;transition: all .5s;}
+
+.butten_box a .cube .front{width: 200px;height: 44px;background: #161616;position: absolute;top:0;left:0;transform: translateZ(22px);font-size: 18px;text-align: center;line-height: 44px;}
+.butten_box a .flop {width: 200px;height: 44px;background: #c3a07d;position: absolute;top: 0;left: 0;transform: rotateX(-90deg) translateZ(22px);opacity: 0;transition: all .5s;font-size: 18px;text-align: center;line-height: 44px;color: #161616;}
+.butten_box a .cube:hover{transform: rotateX(90deg);}
+.butten_box a .cube:hover .flop{opacity: 1;}
+
+.center .firsright{width: 758px;height:514px;}
+.center .firsright div {width: 698px;height: 394px;margin-top: 60px;background: url(../images/watches/watches11.png) no-repeat;background-size: 100%;}
+
+/*鼠标划过*/
+.center .first:hover li,.center .second:hover li{background: rgba(25,25,25,.1);}
+.center li:hover {background: rgba(25,25,25,.1);}
+/*鼠标划过 结束*/
+.center .secleft{padding-left: 0;margin-left: 50px;width: 690px;height: 450px;}
+.center .secleft div{width: 690px;height: 450px;background: url(../images/watches/watches11.png) no-repeat;background-size: 100%;}
+.center .secright{width: 350px;height: 450px;margin-right: 50px;}
+.center .secright h2{padding: 100px 0 60px;}
+.center .secright p{padding-bottom: 40px;}
+
+.center .fourth{margin:0 60px;}
+.center .fourth li {padding: 0;text-align: center;}
+.center .fourth li .foult {margin-bottom: 30px;}
+.center .fourth li .foult div {width: 510px;height: 285px;background: url(../images/watches/watches11.png) no-repeat;background-size: 100%;}
+.center .fourth li .foulb {height: 200px;width: 510px;}
+.center .fourth li .foulb h2{width: 510px;margin-bottom: 20px;}
+.center .fourth li .foulb p{width: 450px;height:50px;margin: 0 30px 20px;text-align: center;}
+.center .fourth li .foulb .butten_box a{margin: 0 auto;}
+
+.center .third{margin:0 60px;}
+.center .third li {padding: 0;text-align: center;}
+.center .third li .foult {margin-bottom: 30px;}
+.center .third li .foult div {width: 450px;height: 255px;background: url(../images/watches/watches11.png) no-repeat;background-size: 100%;margin: 30px;}
+.center .third li .foulb {height: 200px;width: 510px;}
+.center .third li .foulb h2{width: 510px;margin-bottom: 20px;}
+.center .third li .foulb p{width: 450px;height:50px;margin: 0 30px 20px;text-align: center;}
+.center .third li .foulb .butten_box a{margin: 0 auto;}
+
+
+.centerbox .to_top{padding: 20px 0;text-align: center;}
+.centerbox .to_top a{display: block;width: 100px;margin: 0 auto;}
+.centerbox .to_top img{animation: move 1.5s ease-in-out 5s infinite;}
+.centerbox .to_top p{color: #161616;font-size: 16px;padding-top: 5px;padding-bottom: 20px;}
+@keyframes move{
+	0%{opacity: 1;}
+	50%{opacity: 0;}
+	100%{opacity: 1;}
+}
+/*center 纵横系列部分样式结束**/
