@@ -3,7 +3,7 @@
 .banner{margin-top: 90px;width: 100%;height:501px;background: url(../images/banner_02.jpg) no-repeat;position: relative;}
 .banner .main{width: 1200px;margin:0 auto;position: relative;}
 .banner .banlog{position: absolute;top:160px;left:144px;}
-
+.banner .banlog p{font-size: 36px;color:#271819;font-family: "叶根友毛笔行书简体";text-align: center;margin-top: 15px;}
 .banner .watch{position: absolute;top:28px;right:144px;}
 
 /*banner样式  结束*/
